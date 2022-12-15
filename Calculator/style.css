@@ -1,0 +1,116 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: 0;
+    transition: all 0.5s ease;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+body {
+  background: linear-gradient(to right,  rgb(77, 172, 228), white ,  rgb(76, 169, 223));
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+
+}
+
+.calculator {
+    position: relative;
+    height: auto;
+    width: auto;
+    padding: 20px;
+    border: 3px solid burlywood;
+    border-radius: 5%;
+}
+
+#display {
+    margin: 0 5px;
+    height: 150px;
+    width: auto;
+    max-width: 270px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    font-size: 30px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    color: black;
+    padding-right: 5%;
+    overflow-x: scroll;
+    background-color: white;
+    border-radius: 15px;
+  }
+
+#display::-webkit-scrollbar {
+    display: block;
+    height: 3px;
+}
+
+button {
+    height: 60px;
+    width: 60px;
+    border: 0;
+    border-radius: 30px;
+    margin: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 200ms ease;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+button#equal {
+    height: 130px;
+}
+  .calculator.dark {
+    background-color: #071115;
+  }
+
+  .calculator.dark #display {
+    color: black;
+  }
+
+  .calculator.dark button#clear {
+    background-color: whitesmoke;
+    color: #bd3740;
+    font-weight: bolder;
+  }
+
+  .calculator.dark button.btn-number {
+    background-color: #eb9029;
+    color: #f8fafb;
+    font-weight: bolder;
+    border-radius: 10%;
+    border: 1px solid blue;
+  }
+
+  .calculator.dark button.btn-operator {
+    background-color: #bbbdda;
+    color: red;
+    font-size: 25px;
+  }
+  
+  .calculator.dark button.btn-equal {
+    background-color: white;
+    color: red;
+    font-weight: bold;
+    font-size:30px;
+  }
+  .text-center{
+      text-align: center;
+  }
